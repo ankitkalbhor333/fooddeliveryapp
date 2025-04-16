@@ -1,0 +1,114 @@
+.explore-menu{
+display: flex;
+flex-direction: column;
+gap:20px;
+padding-top: 20px;
+}
+.explore-menu h1{
+    color: rgb(8, 8, 7);
+    font-weight: 500;
+}
+.explore-menu-text{
+    max-width: 60%;
+}
+.explore-menu-list{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    gap:30px;
+    text-align: center;
+    overflow-x: scroll;
+}
+.explore-menu-list img{
+    height: 100px;
+    width:100px;
+    border-radius: 10px;
+}
+.explore-menu-list::-webkit-scrollbar{
+    display: none;
+}
+.explore-menu-list-item img{
+cursor: pointer;
+transition: all .3s ease;
+}
+.explore-menu-list-item p{
+    margin-top: 10px;
+    color: rgb(14, 11, 11);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 19px;
+    font-weight: 600;
+}
+.explore-menu hr{
+background-color: rgb(8, 8, 7);
+height: 2px;
+margin-bottom: 10px;
+border: none;
+}
+.explore-menu-list-item .active{
+    border: 4px solid rgb(8, 8, 7);
+    padding: 10px;
+}
+
+
+/* Default styles apply for larger screens */
+
+/* For tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .explore-menu-text {
+      max-width: 80%; /* Expands readability on medium screens */
+    }
+  
+    .explore-menu-list {
+      gap: 20px; /* Reduces spacing */
+      overflow-x: auto; /* Allows scrolling when needed */
+    }
+  
+    .explore-menu-list img {
+      height: 80px;
+      width: 80px;
+    }
+  }
+  
+  /* For mobile devices (max-width: 768px) */
+  @media (max-width: 768px) {
+    .explore-menu {
+      gap: 15px;
+      padding-top: 15px;
+    }
+  
+    .explore-menu-text {
+      max-width: 90%; /* Full width for better mobile readability */
+    }
+  
+    .explore-menu-list {
+      flex-wrap: nowrap; /* Ensures horizontal scrolling */
+      gap: 10px;
+      justify-content: flex-start; /* Aligns items to the left */
+      overflow-x: scroll;
+    }
+  
+    .explore-menu-list img {
+      height: 70px;
+      width: 70px;
+    }
+  
+    .explore-menu-list-item p {
+      font-size: 16px; /* Adjusts for readability */
+    }
+  }
+  
+  /* For extra small screens (max-width: 480px) */
+  @media (max-width: 480px) {
+    .explore-menu h1 {
+      font-size: 20px; /* Reduces heading size */
+    }
+  
+    .explore-menu-list img {
+      height: 60px;
+      width: 60px;
+    }
+  
+    .explore-menu-list-item p {
+      font-size: 14px; /* Smaller font for mobile */
+    }
+  }

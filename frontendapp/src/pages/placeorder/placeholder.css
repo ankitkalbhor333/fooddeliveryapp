@@ -1,0 +1,100 @@
+.place-order-left {
+    background: linear-gradient(135deg, #b8b8b8, #fad0c4);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(14, 213, 163, 0.1);
+    width: 100%;
+    max-width: 400px;
+margin: 9px;
+
+    
+    font-family: 'Poppins', sans-serif;
+  }
+  .place-order-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+ 
+  .title {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .multifield {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    margin: 3px;
+    border-radius: 6px;
+    font-size: 16px;
+    box-shadow: inset 0 2px 9px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  input::placeholder {
+    color: #888;
+    font-style: italic;
+  }
+  
+  .br {
+    margin-bottom: 12px;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 600px) {
+    .multifield {
+      flex-direction: column;
+      gap: 8px;
+    }
+  
+    .place-order-left {
+      padding: 18px;
+    }
+  
+    input[type="text"] {
+      font-size: 14px;
+      padding: 7px;
+    }
+   
+  }
+  
+  
+  
+   .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .buttons button{
+background-color: black;
+font-size: larger;
+color: aliceblue;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+
+   .place-order{
+    display:block;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   }

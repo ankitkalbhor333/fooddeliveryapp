@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.navbar{
+
+   display: flex;
+   justify-content: space-between;
+    align-items: center;
+
+    font-family: outfit;
+    padding: 10px;
+}
+.navbar .logo{
+    height: 30px;
+    width: 70px;
+   
+}
+.navbar-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+.navbar-menu a {
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .navbar-menu a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #000; /* Avoid layout shifts */
+  }
+.navbar-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.navbar-right  img{
+    height: 30px;
+    width:20px
+    
+
+}
+button {
+   background-color: #e8efef;
+   padding: 5px 10px;
+   border: 1px solid black;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+.navbar button:hover{
+   background-color: #E04747;
+   
+} 
+ .navbar .active{
+    padding-bottom: 2px;
+    border-bottom:2px solid black;
+}
+
+.navbar-search-icon{
+    position:relative;
+}
+.navbar-search-icon  .dot{
+    position: absolute;
+   min-width:9px;
+   min-height:9px;
+   background-color:#181717;
+   border-radius :5px;
+   top:-7px;
+   right: -5px;
+
+}
+
+@media(max-width:1050px){
+    .navbar .logo{
+        width:140px;
+    }
+    .navbar-menu{
+        gap:20px;
+        font-size: 17px;
+    }
+    .navbar-right{
+        gap: 20px;
+    }
+    .navbar-right img{
+        
+        width: 22px;
+    }
+    .navbar-right button{
+        padding:8px 25px;
+    }
+}
+@media(max-width:900px){
+    .navbar .logo{
+        width:120px;
+    }
+    .navbar-menu{
+        gap:15px;
+        font-size: 15px;
+    }
+    .navbar-right{
+        gap: 20px;
+    }
+    .navbar-right img{
+        
+        width: 20px;
+    }
+    .navbar-right button{
+        padding:7px 20px;
+        font-size: 15px;
+    }
+}
+
+@media(max-width:750px){
+   
+    .navbar-menu{
+    display: none;
+    }
+   
+}

@@ -1,0 +1,26 @@
+.food-display{
+    margin-top: 10px;
+
+    align-items: center;
+  min-height: 100vh;
+    position: relative;
+    margin-right: 20px;
+    
+    padding-right: 100px;
+}
+.food-display h2{
+    font-size: xx-large;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.food-display-list {
+ margin: 3px;
+ display: flex;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive column sizing */
+        gap: 210px;
+ row-gap: 50px;
+    
+}
+/* Default styling (already applied) */
+
